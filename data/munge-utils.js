@@ -9,7 +9,7 @@ function formatSearch(plantObject) {
       plant_id: plantItem.id
     };
   });
-  const finalPlantSearch = newPlantSearch.slice(0, 10);
+  const finalPlantSearch = newPlantSearch;
   return finalPlantSearch;
 }
 

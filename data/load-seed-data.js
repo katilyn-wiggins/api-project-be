@@ -29,7 +29,7 @@ async function run() {
       plants.map((plant) => {
         return client.query(
           `
-                    INSERT INTO plants (name, scientific, family, image, year, plant_id, owner_id)
+                    INSERT INTO favorites (name, scientific, family, image, year, plant_id, owner_id)
                     VALUES ($1, $2, $3, $4, $5, $6, $7);
                 `,
           [
